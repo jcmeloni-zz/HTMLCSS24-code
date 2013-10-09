@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Skewing a 2D Element Along the y-axis</title>
+
+    <style type="text/css">
+    body {
+       margin: 150px 0px 0px 150px ;
+    }
+
+    #theBox_skewY {
+       height: 250px;
+       width: 250px;
+       background-color: #ddd;
+       border: 1px solid #000;
+       text-align: center;
+       display:table-cell;
+       vertical-align:middle;
+       font-size: 150%;
+       font-weight: bold;
+
+       -moz-transform: skewY(45deg);
+       -ms-transform: skewY(45deg);
+       -o-transform: skewY(45deg);
+       -webkit-transform: skewY(45deg);
+       transform: skewY(45deg);
+     }
+    </style>
+  </head>
+
+  <body>
+
+     <div id="theBox_skewY">
+        I am a box!<br/>I am skewed along the y-axis.
+     </div>
+
+  </body>
+</html>

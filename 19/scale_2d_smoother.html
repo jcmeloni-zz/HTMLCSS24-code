@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Scaling a 2D Element</title>
+
+    <style type="text/css">
+    #theBox {
+       height: 250px;
+       width: 250px;
+       background-color: #ddd;
+       border: 1px solid #000;
+       text-align: center;
+       display:table-cell;
+       vertical-align:middle;
+       font-size: 150%;
+       font-weight: bold;
+
+       -moz-transition: -moz-transform 5s ease-in 1s;
+       -o-transition: -o-transform 5s ease-in 1s;
+       -webkit-transition: -webkit-transform 5s ease-in 1s;
+       transition: transform 5s ease-in 1s;
+     }
+
+    #theBox:hover {
+       -moz-transform: scale(.5);
+       -ms-transform: scale(.5);
+       -o-transform: scale(.5);
+       -webkit-transform: scale(.5);
+       transform: scale(.5);
+     }
+
+    </style>
+  </head>
+
+  <body>
+
+     <div id="theBox">
+        I am a box!<br/>Watch me shrink!
+     </div>
+
+  </body>
+</html>

@@ -1,33 +1,57 @@
 body {
   font-family:Verdana, Arial;
   font-size:12pt;
-  color:navy;
+  color: #000080;
 }
 
-div {
-  padding:3px;
-}
-
-div.title {
+h1 {
   font-size:18pt;
   font-weight:bold;
   font-variant:small-caps;
   letter-spacing:2px;
-  color:black;
+  color: #000000;
 }
 
-div.image {
+img {
   float:left;
+  padding: 9px;
 }
 
-div.info, div.favorites {
+footer {
+  padding-top: 12px;
+  text-align:center;
+}
+
+a:link, a:visited, a:active {
+  color:#19619a;
+  font-weight:bold;
+  text-decoration:none;
+}
+
+a:hover {
+  background-color:#ffd700;
+  font-weight:bold;
+  text-decoration:none;
+}
+
+div {
+  padding: 3px;
+}
+
+div.player_info, div.player_favorites {
   float:left;
   vertical-align:top;
   width:350px;
 }
 
-div.footer {
-  text-align:center;
+.label {
+  font-weight:bold;
+  font-variant:small-caps;
+}
+
+table, tr, td {
+  border: 1px solid black;
+  border-collapse: collapse;
 }
 
 table.stats {
@@ -37,37 +61,32 @@ table.stats {
   font-size:11pt;
 }
 
-.label {
-  font-weight:bold;
+thead {
   font-variant:small-caps;
-}
-
-tr.heading {
-  font-variant:small-caps;
-  background-color:navy;
-  color:white;
+  background-color: #000080;
+  color: #ffffff;
 }
 
 tr.light {
-  background-color:white;
+  background-color: #ffffff;
 }
 
 tr.dark {
-  background-color:#EEEEEE;
+  background-color: #eeeeee;
 }
 
 th.season, td.season {
   text-align:left;
 }
 
-a:link, a:visited, a:active {
-  color:#19619A;
-  font-weight:bold;
-  text-decoration:none;
-}
 
-a:hover {
-  background-color:gold;
-  font-weight:bold;
-  text-decoration:none;
-}
+
+
+
+
+
+
+
+
+
+

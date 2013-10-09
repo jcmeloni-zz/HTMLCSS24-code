@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Translating a 3D Element</title>
+
+    <style type="text/css">
+    body {
+       margin: 150px 0px 0px 150px ;
+    }
+
+    #theBox {
+       height: 250px;
+       width: 250px;
+       background-color: #ddd;
+       border: 1px solid #000;
+       text-align: center;
+       display:table-cell;
+       vertical-align:middle;
+       font-size: 150%;
+       font-weight: bold;
+     }
+
+    #theBox:hover {
+       -moz-transform: perspective(300px) translateZ(100px);
+       -ms-transform: perspective(300px) translateZ(100px);
+       -o-transform: perspective(300px) translateZ(100px);
+       -webkit-transform: perspective(300px) translateZ(100px);
+       transform: perspective(300px) translateZ(100px);
+     }
+
+    </style>
+  </head>
+
+  <body>
+
+     <div id="theBox">
+        I am a box!<br/>Watch me move!
+     </div>
+
+  </body>
+</html>

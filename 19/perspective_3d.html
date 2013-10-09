@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Perspective on a 3D Element</title>
+
+    <style type="text/css">
+    body {
+       margin: 150px 0px 0px 150px ;
+    }
+
+    #theBox {
+       height: 250px;
+       width: 250px;
+       background-color: #ddd;
+       border: 1px solid #000;
+       text-align: center;
+       display:table-cell;
+       vertical-align:middle;
+       font-size: 150%;
+       font-weight: bold;
+
+       -moz-transform: perspective(100px) rotateY(-45deg);
+       -ms-transform: perspective(100px) rotateY(-45deg);
+       -o-transform: perspective(100px) rotateY(-45deg);
+       -webkit-transform: perspective(100px) rotateY(-45deg);
+       transform: perspective(100px) rotateY(-45deg);
+     }
+    </style>
+  </head>
+
+  <body>
+
+     <div id="theBox">
+        I am a box!<br/>I have a dramatic perspective!
+     </div>
+
+  </body>
+</html>
